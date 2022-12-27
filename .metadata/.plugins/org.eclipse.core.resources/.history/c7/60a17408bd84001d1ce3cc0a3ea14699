@@ -1,0 +1,31 @@
+package model.entidades;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+public class Pessoa {
+	private String nome;
+	private LocalDate dataDeNascimento;
+	private double salario;
+	private List<Telefone> listaDeTelefones = new ArrayList<Telefone>();
+	public Pessoa(){
+		
+	}
+	public Pessoa(String nome, LocalDate dataDeNascimento, double salario) {
+		this.nome = nome;
+		this.dataDeNascimento = dataDeNascimento;
+		this.salario = salario;
+	}
+
+
+
+	
+}
+
+
+
+
+
+
+
+

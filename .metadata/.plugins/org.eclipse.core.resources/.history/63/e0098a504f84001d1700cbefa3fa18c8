@@ -1,0 +1,14 @@
+package view.aplicacao;
+
+import java.time.LocalDate;
+
+import model.entidades.Pessoa;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Pessoa pessoa = new Pessoa("Rutervaldo Felix", LocalDate.now(), 1700.00, "84998754268");
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package view.aplicacao;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+import model.entidades.Pessoa;
+
+public class Main {
+	public static void main(String[] args) {
+		DateTimeFormatter formatoData = DateTimeFormatter.ofPattern("dd/MM/uuuu");
+
+		Pessoa pessoa = new Pessoa("Rutervaldo Felix", LocalDate.parse("15/03/1990", formatoData), 1700.00, "84998754268");
+		
+	}
+
+}

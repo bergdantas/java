@@ -1,0 +1,22 @@
+package model.entidades;
+
+import java.util.Date;
+
+public class Pessoa {
+	String nome;
+	Date dataDeNascimento;
+	String telefone;
+	
+	Pessoa(){
+		
+	}
+
+	public Pessoa(String nome, Date dataDeNascimento, String telefone) {
+		this.nome = nome;
+		this.dataDeNascimento = dataDeNascimento;
+		this.telefone = telefone;
+	}
+	
+
+
+}

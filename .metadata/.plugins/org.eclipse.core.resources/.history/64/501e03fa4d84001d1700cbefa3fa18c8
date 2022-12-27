@@ -1,0 +1,12 @@
+package view.aplicacao;
+
+import model.entidades.Pessoa;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Pessoa pessoa = new Pessoa("Rutervaldo Felix", 9/9/1999, 1700.00, 84998754268);
+		
+	}
+
+}

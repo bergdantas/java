@@ -1,0 +1,25 @@
+package model.entidades;
+
+import java.time.LocalDate;
+
+public class Pessoa {
+	String nome;
+	LocalDate dataDeNascimento;
+	double salario;
+	String telefone;
+	
+	Pessoa(){
+		
+	}
+
+	public Pessoa(String nome, LocalDate dataDeNascimento, double salario, String telefone) {
+		this.nome = nome;
+		this.dataDeNascimento = dataDeNascimento;
+		this.salario = salario;
+		this.telefone = telefone;
+	}
+	
+	
+
+
+}

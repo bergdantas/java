@@ -1,0 +1,17 @@
+package view.aplicacao;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import model.entidades.Pessoa;
+
+public class Main {
+	public static void main(String[] args) {
+		DateTimeFormatter formatoData = DateTimeFormatter.ofPattern("dd/MM/uuuu");
+		
+		Pessoa p1 = new Pessoa();
+		
+		System.out.println(p1);
+	}
+}
+
+
