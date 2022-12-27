@@ -1,0 +1,10 @@
+package model.entidades;
+
+import java.util.Date;
+
+public class Pessoa {
+	String nome;
+	Date dataDeNascimento;
+	String telefone;
+
+}

@@ -1,0 +1,39 @@
+package view.aplicacao;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+import model.entidades.Pessoa;
+
+public class Main {
+	public static void main(String[] args) {
+		DateTimeFormatter formatoData = DateTimeFormatter.ofPattern("dd/MM/uuuu");
+		Scanner ouvido = new Scanner(System.in);
+		
+		Pessoa p1 = new Pessoa();
+		System.out.println("Digite o nome do usuário");
+		String entradaNome = ouvido.next();
+		p1.setNome(entradaNome);
+		
+		System.out.println("Digite a data de nascimento da pessoa (dd/mm/aaaa)");
+		String entradaDataDeNascimento = ouvido.next();
+		p1.setDataDeNascimento(LocalDate.parse(entradaDataDeNascimento, formatoData));
+		
+		System.out.println("Digite o valor do salário");
+		double entradaSalario = ouvido.nextDouble();
+		p1.setSalario(entradaSalario);
+		
+		System.out.println("Digite o telefone");
+		String entradaTelefone = ouvido.next();
+		p1.adicionaTelefone(entradaTelefone);
+		
+		ouvido.close();
+		
+		System.out.println(p1);
+		p1.adicionaTelefone("84976879686");
+		System.out.println(p1);
+		
+		
+		p1.listarTelefones();
+	}
+}
